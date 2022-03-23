@@ -1,0 +1,2 @@
+C:\Users\kevin\source\repos\webViewProject\ARM64\Debug\WebView2Loader.dll
+C:\Users\kevin\source\repos\webViewProject\ARM64\Debug\WebView2GettingStarted.exe
