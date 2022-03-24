@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Web.WebView2.Core;
+using System.Runtime.InteropServices;
 
 namespace webView2B
 {
@@ -18,6 +19,7 @@ namespace webView2B
             InitializeComponent();
             this.Resize += new System.EventHandler(this.Form_Resize);
             webView.NavigationStarting += EnsureHttps;
+           
         }
         //Ensure that the address starts with "https://"
         void EnsureHttps(object sender, CoreWebView2NavigationStartingEventArgs args)
@@ -37,7 +39,6 @@ namespace webView2B
             requestButton.Left = this.ClientSize.Width - requestButton.Width;
             addressBar.Width = goButton.Left - addressBar.Left;
         }
-
         private void goButton_Click(object sender, EventArgs e)
         {   
             //Checks to see if link is valid
@@ -51,6 +52,7 @@ namespace webView2B
             {
                 try
                 {
+                    //webView.CoreWebView2.Settings.UserAgent = "Mozilla/5.0 (X11; U; Iphone i686; en-US; rv:1.9.0.4) Gecko/20100101 Firefox/4.0";
                     webView.CoreWebView2.Navigate(addressBar.Text);
                 }
                 //Catch any other errors we might not have accounted for
@@ -82,6 +84,7 @@ namespace webView2B
             {
                 backgroundWorker1.RunWorkerAsync();
                 //Updating progressbar values
+                
                 progressBar1.Value++;
                 progressLabel1.Text = "Progress " + progressBar1.Value + "/" + 30;
             }
