@@ -32,6 +32,7 @@ namespace webView2B
             this.webView = new Microsoft.Web.WebView2.WinForms.WebView2();
             this.addressBar = new System.Windows.Forms.TextBox();
             this.goButton = new System.Windows.Forms.Button();
+            this.requestButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.webView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,24 +56,38 @@ namespace webView2B
             // 
             // goButton
             // 
+            this.goButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.goButton.Location = new System.Drawing.Point(742, 0);
             this.goButton.Name = "goButton";
-            this.goButton.Size = new System.Drawing.Size(52, 20);
+            this.goButton.Size = new System.Drawing.Size(61, 20);
             this.goButton.TabIndex = 2;
             this.goButton.Text = "Go";
             this.goButton.UseVisualStyleBackColor = true;
             this.goButton.Click += new System.EventHandler(this.goButton_Click);
+            // 
+            // requestButton
+            // 
+            this.requestButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.requestButton.Location = new System.Drawing.Point(742, 18);
+            this.requestButton.Name = "requestButton";
+            this.requestButton.Size = new System.Drawing.Size(61, 23);
+            this.requestButton.TabIndex = 3;
+            this.requestButton.Text = "Request";
+            this.requestButton.UseVisualStyleBackColor = true;
+            this.requestButton.Click += new System.EventHandler(this.requestButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.requestButton);
             this.Controls.Add(this.goButton);
             this.Controls.Add(this.addressBar);
             this.Controls.Add(this.webView);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Browser";
             ((System.ComponentModel.ISupportInitialize)(this.webView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -84,6 +99,7 @@ namespace webView2B
         private Microsoft.Web.WebView2.WinForms.WebView2 webView;
         private System.Windows.Forms.TextBox addressBar;
         private System.Windows.Forms.Button goButton;
+        private System.Windows.Forms.Button requestButton;
     }
 }
 

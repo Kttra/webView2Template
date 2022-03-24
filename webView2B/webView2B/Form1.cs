@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Web.WebView2.Core;
+//using "Form2.cs";
 
 namespace webView2B
 {
@@ -41,7 +42,7 @@ namespace webView2B
         {   
             //Checks to see if link is valid
             string address = addressBar.Text;
-            if (address.Length < 8 || address.Substring(0, 8) != "https://" || addressBar.Text == "https://")
+            if (address.Length < 9 || address.Substring(0, 8) != "https://")
             {
                 webView.CoreWebView2.ExecuteScriptAsync($"alert('Link is not valid, remember to start with https://')");
             }
@@ -60,5 +61,11 @@ namespace webView2B
             }
         }
 
+        private void requestButton_Click(object sender, EventArgs e)
+        {
+            extraMenu f2 = new extraMenu();
+            f2.Show();
+            
+        }
     }
 }

@@ -18,3 +18,4 @@ C:\Users\kevin\source\repos\webView2B\webView2B\bin\Debug\Microsoft.Web.WebView2
 C:\Users\kevin\source\repos\webView2B\webView2B\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
 C:\Users\kevin\source\repos\webView2B\webView2B\obj\Debug\webView2B.csproj.CopyComplete
 C:\Users\kevin\source\repos\webView2B\webView2B\obj\Debug\webView2B.Form1.resources
+C:\Users\kevin\source\repos\webView2B\webView2B\obj\Debug\webView2B.extraMenu.resources
