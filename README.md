@@ -11,5 +11,6 @@ The default layout of the program is deplayed below. It consists of 3 progress b
 ------------------------------------
 The request button loads the following form. Currently the form does not have a function, I have included code tied to the checkmarks if you want to add a process.
 
+<p align="center">
 <img src="https://user-images.githubusercontent.com/100814612/160015820-705f4fb7-cd39-4922-a4e4-4a0761118e60.png"><img>
-
+</p>
