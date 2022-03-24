@@ -30,7 +30,7 @@ namespace webView2B
         private void InitializeComponent()
         {
             this.menu2Label = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.extraTextbox = new System.Windows.Forms.TextBox();
             this.menu2Confirm = new System.Windows.Forms.Button();
             this.checkBoxB = new System.Windows.Forms.CheckBox();
             this.checkBoxC = new System.Windows.Forms.CheckBox();
@@ -47,12 +47,13 @@ namespace webView2B
             this.menu2Label.Text = "How many extra steps would you like to do?";
             this.menu2Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // extraTextbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(110, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(73, 20);
-            this.textBox1.TabIndex = 1;
+            this.extraTextbox.Location = new System.Drawing.Point(110, 59);
+            this.extraTextbox.Name = "extraTextbox";
+            this.extraTextbox.Size = new System.Drawing.Size(73, 20);
+            this.extraTextbox.TabIndex = 1;
+            this.extraTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // menu2Confirm
             // 
@@ -103,7 +104,7 @@ namespace webView2B
             this.Controls.Add(this.checkBoxC);
             this.Controls.Add(this.checkBoxB);
             this.Controls.Add(this.menu2Confirm);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.extraTextbox);
             this.Controls.Add(this.menu2Label);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "extraMenu";
@@ -117,7 +118,7 @@ namespace webView2B
         #endregion
 
         private System.Windows.Forms.Label menu2Label;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox extraTextbox;
         private System.Windows.Forms.Button menu2Confirm;
         private System.Windows.Forms.CheckBox checkBoxB;
         private System.Windows.Forms.CheckBox checkBoxC;
