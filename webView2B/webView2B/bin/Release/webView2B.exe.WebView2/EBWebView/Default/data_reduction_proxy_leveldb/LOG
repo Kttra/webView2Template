@@ -1,2 +1,3 @@
-2022/03/22-21:01:50.536 335c Creating DB C:\Users\kevin\source\repos\webView2B\webView2B\bin\Release\webView2B.exe.WebView2\EBWebView\Default\data_reduction_proxy_leveldb since it was missing.
-2022/03/22-21:01:50.606 335c Delete type=3 #1
+2022/03/24-14:44:02.666 614c Recovering log #7
+2022/03/24-14:44:02.677 614c Delete type=0 #7
+2022/03/24-14:44:02.677 614c Delete type=3 #6

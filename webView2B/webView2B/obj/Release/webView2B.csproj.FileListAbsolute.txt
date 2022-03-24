@@ -17,3 +17,4 @@ C:\Users\kevin\source\repos\webView2B\webView2B\obj\Release\webView2B.csproj.Cor
 C:\Users\kevin\source\repos\webView2B\webView2B\obj\Release\webView2B.csproj.CopyComplete
 C:\Users\kevin\source\repos\webView2B\webView2B\obj\Release\webView2B.exe
 C:\Users\kevin\source\repos\webView2B\webView2B\obj\Release\webView2B.pdb
+C:\Users\kevin\source\repos\webView2B\webView2B\obj\Release\webView2B.extraMenu.resources

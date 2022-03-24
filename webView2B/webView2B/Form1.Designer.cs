@@ -198,6 +198,7 @@ namespace webView2B
             // 
             // stopButton
             // 
+            this.stopButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.stopButton.Location = new System.Drawing.Point(518, 26);
             this.stopButton.Name = "stopButton";
             this.stopButton.Size = new System.Drawing.Size(61, 23);
