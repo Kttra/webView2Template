@@ -17,7 +17,7 @@ The request button loads the following form. Currently the form does not have a 
 
 **User Agent**
 ------------------------------------
-It is possible to now change the useragent to view the mobile and desktop version of websites. Below are some examples of how what type of input the user agent setting expects.
+It is possible to now change the user agent to view the mobile and desktop version of websites. Below are some examples of how what type of input the user agent setting expects.
 
 ```
 string mobile = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Mobile/15E148 Safari/604.1";
