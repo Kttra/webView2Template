@@ -14,3 +14,15 @@ The request button loads the following form. Currently the form does not have a 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/100814612/160015820-705f4fb7-cd39-4922-a4e4-4a0761118e60.png"><img>
 </p>
+
+**User Agent**
+------------------------------------
+It is possible to now change the useragent to view the mobile and desktop version of websites. Below are some examples of how what type of input the user agent setting expects.
+
+```
+string mobile = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Mobile/15E148 Safari/604.1";
+string edge = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Edg/91.0.864.59";
+string chrome = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36";
+
+webView.CoreWebView2.Settings.UserAgent = edge;
+```
