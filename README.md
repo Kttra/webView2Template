@@ -28,7 +28,7 @@ webView.CoreWebView2.Settings.UserAgent = edge;
 ```
 **Json Files**
 ------------------------------------
-Here's some information on reading and writing Json files in C#. To work with Json files, I recommend using the Newtonsoft.Json package. After installing that package, you should create a class to store the json file information. I will include files as examples in the json folder of this project. Below is an example of setting the progress bar information using the progressB class and the progressBarValues json file.
+Here's some information on reading and writing Json files in C#. To work with Json files, I recommend using the Newtonsoft.Json package. After installing that package, you should create a class to store the json file information. Below is an example of setting the progress bar information using the progressB class and the progressBarValues json file. The results and files used are in the json folder of this project (the below code could be placed in the loadButton_Click method).
 
 ```
 string fileName = @"c:\progressBarValues.json";
@@ -41,11 +41,12 @@ if (File.Exists(fileName))
     //Set the maximum value the progress bar can be
     progressBar1.Maximum = jsonInfo[0].maximum;
     
-    //Copies the original information from the json file
-    jsonInfo.Add(jsonInfo[0]);
+    //Creates another progressB class, then exit one of the values
+    progressB newEntry = new progressB();
+    newEntry.maximum = 100;
     
-    //Edits the new entry
-    jsonInfo[1].maximum = 100;
+    //Adds another entry into the list
+    jsonInfo.Add(newEntry);
     
     //Creates a new json file with the edits we made
     File.WriteAllText("myobjects.json", JsonConvert.SerializeObject(jsonInfo));
