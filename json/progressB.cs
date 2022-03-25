@@ -23,11 +23,11 @@ namespace webView2B
 
     }
     //Create class with entries: progressB newEntry = new progressB(10, 10, 10);
-    public progressB(int aEdge, int aDesktop, int aMobile)
+    public progressB(int aMaximum, int aMinimum, int aValue)
     {
-        edge = aEdge;
-        desktop = aDesktop;
-        mobile = aMobile;
+        maximum = aMaximum;
+        minimum = aMinimum;
+        value = aValue;
     }
     }
 }
