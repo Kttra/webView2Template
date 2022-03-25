@@ -38,7 +38,7 @@ if (File.Exists(fileName))
     //Give the class the values from the json
     List<progressB> searches = JsonConvert.DeserializeObject<List<progressB>>(File.ReadAllText(fileName));
     
-    //Set
+    //Set the maximum value the progress bar can be
     progressBar1.Maximum = searches[0].maximum;
 }
 ```
