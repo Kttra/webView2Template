@@ -26,3 +26,19 @@ string chrome = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
 
 webView.CoreWebView2.Settings.UserAgent = edge;
 ```
+**Json Files**
+------------------------------------
+To work with Json files, I recommend using the Newtonsoft.Json package. After installing that package, you should create a class to store the json file information. I will include files as examples in the json folder of this project. Below is an example of setting the progress bar information using the progressB class and the progressBarValues json file.
+
+```
+string fileName = @"c:\progressBarValues.json";
+//Check if the file exists
+if (File.Exists(fileName))
+{
+    //Give the class the values from the json
+    List<progressB> searches = JsonConvert.DeserializeObject<List<progressB>>(File.ReadAllText(fileName));
+    
+    //Set
+    progressBar1.Maximum = searches[0].maximum;
+}
+```
