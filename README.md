@@ -52,3 +52,7 @@ if (File.Exists(fileName))
     File.WriteAllText("myobjects.json", JsonConvert.SerializeObject(jsonInfo));
 }
 ```
+
+**What This Program is About**
+------------------------------------
+Originally this started as a webview2 project, but eventually it became more about exploring C# in visual studio. I started this project to update one of my older programs that was still running on Webbrowser using C++. I had to learn C# from scratch since I had no prior experience using it. While I was working on this project, I had a lot of questions that I had trouble finding answers to. That's why I decided to change the direction of this project to be more focused on what C# can do. From this point on, this project will be more focused on how to do things in C# and visual studio.
