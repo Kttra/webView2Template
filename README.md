@@ -112,6 +112,9 @@ Working with multiple forms can be confusing, so here's some information about i
 form2 f2 = new form2();
 f2.Show(); //Show form2, immediately execute code under
 //f2.ShowDialog(); //Show form2, wait for form2 to close
+
+//To Close form2, have this somewhere in the form2.cs file
+this.Close();
 ```
 There are two ways to show the form after creating it. Show will show the form and then execute the code under it immediately. While ShowDialog will show the form, wait for the form to close, and then execute the code that is under it. This is important to consider if you want to wait for form2 to update information before proceeding.
 
