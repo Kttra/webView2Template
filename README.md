@@ -84,11 +84,11 @@ if (File.Exists(fileName))
 ```
 **App Settings**
 ------------------------------------
-Instead of working with json files, we can also use the app settings to store or load information. The settings can be access by going to the project properties and going to the settings tab. Here is an example of how it may look.
+Instead of working with json files, we can also use the app settings to store or load information. The settings can be accessed by going to the project properties and tehn heading to the settings tab. You can then add in parameters there. Here is an example of how it may look.
 
 <img src="https://user-images.githubusercontent.com/100814612/160251053-beebfc42-2244-4464-bd34-e3a7ef0a65b4.png" width="490" height="200"/><img>
 
-Now after setting up these values, how exactly do we use them? Well, it's simple, we just need to change the their values if we wish and then save them.
+Now after setting up these values, how exactly do we use them? Well, it's simple, we just need to reassign the their values if we wish to and then we need to make sure to save them. Now you can use these values to load up different settings saved by the user.
 
 ```
 //Assigning them values
@@ -108,6 +108,7 @@ int info3 = Properties.Settings.Default.info3;
 **Working with Multiple Forms**
 ------------------------------------
 Working with multiple forms can be confusing, so here's some information about it. Let's say you want to open form2 once a button is clicked in form1. In the button_click method, you would want create form2 and then show the form.
+
 ```
 form2 f2 = new form2();
 f2.Show(); //Show form2, immediately execute code under
