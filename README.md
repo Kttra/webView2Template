@@ -86,7 +86,7 @@ if (File.Exists(fileName))
 ------------------------------------
 Instead of working with json files, we can also use the app settings to store or load information. The settings can be access by going to the project properties and going to the settings tab. Here is an example of how it may look.
 
-<img src="https://user-images.githubusercontent.com/100814612/160251053-beebfc42-2244-4464-bd34-e3a7ef0a65b4.png" width="500" height="250"/><img>
+<img src="https://user-images.githubusercontent.com/100814612/160251053-beebfc42-2244-4464-bd34-e3a7ef0a65b4.png" width="490" height="200"/><img>
 
 Now after setting up these values, how exactly do we use them? Well, it's simple, we just need to change the their values if we wish and then save them.
 
