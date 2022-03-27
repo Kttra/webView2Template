@@ -133,7 +133,8 @@ private async void method1()
             }
 }
 ```
-Now a more complex use case of async methods is if you want to run an async method multiple times without it overlapping (run the async method, then wait for it to end before running it again).
+Now a more complex use case of async methods is if you want to run an async method multiple times without it overlapping. In the code below, method2 calls for method2Cont to run, then it waits until method2Cont finishes running before it continues onto the next loop.
+
 ```
 private async Task method2()
         {
