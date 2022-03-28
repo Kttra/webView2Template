@@ -5,6 +5,8 @@ A base project with webView2 (Using both C# and C++). It is made with visual stu
 ------------------------------------
 To use webview2, make sure you download the package for it. To download the package, right click on your project and click on manage NuGet package. From there, you can search up webview2 and download it. Additionally, if you want the program to work for others, you may need them to download the webview2 runtime or the microsoft edge insider versions like the Microsoft Edge Canary Channel.
 
+In some cases, webview2 may not show up in your toolbar. If this happens, you will need to right click on anything in the toolbar, then press on choose items. Press browse and head to the directory where the webview2 package was downloaded to.
+
 **Default Layout and Usage**
 ------------------------------------
 The default layout of the program is deplayed below. It consists of 3 progress bars, 6 labels, an address bar, 2 background worker threads, and 5 buttons. Pressing run will execute the 2 background workers (currently they do nothing). The progress bar's value will also increment by one. As this is made as a template for webview2 projects, most of the code and interface is inactive and just there to as an idea of how to proceed. Pressing on the progress bar or stop will send a stop request to the background workers. The go button loads the webpage that is typed in the address bar. The load button will load information from a json file.
