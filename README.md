@@ -1,6 +1,10 @@
 # WebView2 Sample Template & C# Info
 A base project with webView2 (Using both C# and C++). It is made with visual studio and the webview2 package. This is a template browser made so that anyone can edit it to suit their needs. This project was made because I found existing documentation to be either hard to find or hard to understand, so I hope that this project helps someone out. This project is primarily using C#.
 
+**Packages**
+------------------------------------
+To use webview2, make sure you download the package for it. To download the package, right click on your project and click on manage NuGet package. From there, you can search up webview2 and download it. Additionally, if you want the program to work for others, you may need them to download the webview2 runtime or the microsoft edge insider versions like the Microsoft Edge Canary Channel.
+
 **Default Layout and Usage**
 ------------------------------------
 The default layout of the program is deplayed below. It consists of 3 progress bars, 6 labels, an address bar, 2 background worker threads, and 5 buttons. Pressing run will execute the 2 background workers (currently they do nothing). The progress bar's value will also increment by one. As this is made as a template for webview2 projects, most of the code and interface is inactive and just there to as an idea of how to proceed. Pressing on the progress bar or stop will send a stop request to the background workers. The go button loads the webpage that is typed in the address bar. The load button will load information from a json file.
