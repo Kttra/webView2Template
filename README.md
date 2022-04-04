@@ -160,6 +160,15 @@ private async Task method2Cont(string type)
                 }
         }
 ```
+**Creating a Setup Wizard**
+------------------------------------
+To add a setup wizard, right click on your solution, go to add, and add a new project. From there you can choose setup wizard. Name the setup anything you want and choose create a setup for a Windows application. Then hit next and check "Primary output from webView2B".
+<img src="https://user-images.githubusercontent.com/100814612/161460394-87d7c476-72ca-4a43-bb49-2875bf44f0d0.png" width="500" height="383"/><img>
+<img src="https://user-images.githubusercontent.com/100814612/161460421-521c6a3f-8cd7-4c0e-8183-6ccd2642c4f9.png" width="500" height="383"/><img>
+
+**Customizing Your Setup Wizard**
+------------------------------------
+Right click on the setup project, click on view, and press on File System. From there you can create a desktop shortcut or programs menu shortcut to your primary output. If you left click on the setup project, on the properties window, you can change the icon picture, target platform (x64 or x86), author, manufacturer, and other details of your project. One thing to take note of is in the system files application folder, these dll files should be there: Microsoft.Web.Webview2.Core.dll, Microsoft.Web.Webview2.Winform.dll, Microsoft.Web.Webview2.Wpf.dll, and WebView2Loader.dll. If one of them is missing, your project may not load properly. 
 
 **Initializing the Browser**
 ------------------------------------
