@@ -174,7 +174,9 @@ Alternatively you can try to publish your project using visual studio publish op
 
 **Customizing Your Setup Wizard**
 ------------------------------------
-Right click on the setup project, click on view, and press on File System. From there you can create a desktop shortcut or programs menu shortcut to your primary output. If you left click on the setup project, on the properties window, you can change the icon picture, target platform (x64 or x86), author, manufacturer, and other details of your project. One thing to take note of is in the system files application folder, these dll files should be there: Microsoft.Web.Webview2.Core.dll, Microsoft.Web.Webview2.Winform.dll, Microsoft.Web.Webview2.Wpf.dll, and WebView2Loader.dll. If one of them is missing, your project may not load properly. 
+Right click on the setup project, click on view, and press on File System. From there you can create a desktop shortcut or programs menu shortcut to your primary output. If you left click on the setup project, on the properties window, you can change the icon picture, target platform (x64 or x86), author, manufacturer, and other details of your project.
+
+One thing to take note of is in the system files application folder, these dll files should be there: Microsoft.Web.Webview2.Core.dll, Microsoft.Web.Webview2.Winform.dll, Microsoft.Web.Webview2.Wpf.dll, and WebView2Loader.dll. If one of them is missing, your project may not load properly. 
 
 **Initializing the Browser**
 ------------------------------------
