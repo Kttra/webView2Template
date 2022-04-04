@@ -163,6 +163,7 @@ private async Task method2Cont(string type)
 **Creating a Setup Wizard**
 ------------------------------------
 To add a setup wizard, right click on your solution, go to add, and add a new project. From there you can choose setup wizard. Name the setup anything you want and choose create a setup for a Windows application. Then hit next and check "Primary output from webView2B".
+
 <img src="https://user-images.githubusercontent.com/100814612/161460394-87d7c476-72ca-4a43-bb49-2875bf44f0d0.png" width="500" height="383"/><img>
 <img src="https://user-images.githubusercontent.com/100814612/161460421-521c6a3f-8cd7-4c0e-8183-6ccd2642c4f9.png" width="500" height="383"/><img>
 
