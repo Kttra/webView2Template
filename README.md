@@ -161,6 +161,27 @@ private async Task method2Cont(string type)
         }
 ```
 
+**Initializing the Browser**
+------------------------------------
+If you end up making a setup file for your webview project, you'll need to initialize the browser in a certain way or else the webpage of your project will end up being blank. Below the initialize component function, you should initialize your browser like so:
+```
+public Form1()
+{
+    InitializeComponent();
+    Task delayTask = InitializeBrowser();
+    this.Resize += new System.EventHandler(this.Form_Resize);
+    webView.NavigationStarting += EnsureHttps;
+}
+//Initializes the browser for the setup version
+private async Task InitializeBrowser()
+{
+    var userDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\AppName";
+    var env = await CoreWebView2Environment.CreateAsync(null, userDataFolder);
+    await webView.EnsureCoreWebView2Async(env);
+    webView.Source = new Uri("https://bing.com"); //Use any webpage you want
+}
+```
+
 **What This Project is About**
 ------------------------------------
 Originally this started as a webview2 project, but eventually it became more about exploring C# in visual studio. I started this project to update one of my older programs that was still running on Webbrowser using C++. I had to learn C# from scratch since I had no prior experience using it. While I was working on this project, I had a lot of questions that I had trouble finding answers to. That's why I decided to change the direction of this project to be more focused on what C# can do. From this point on, this project will be more focused on how to do things in C# and visual studio.
