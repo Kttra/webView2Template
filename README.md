@@ -1,5 +1,5 @@
 # WebView2 Sample Template & C# Info
-A base project with webView2 (Using both C# and C++. It is made with visual studio and the webview2 package. This is a template browser made so that anyone can edit it to suit their needs. This project was made because I found existing documentation to be either hard to find or hard to understand, so I hope that this project helps someone out. This project is primarily using C#.
+A base project with webView2 using both C# and C++. It is made with visual studio and the webview2 package. This is a template browser made so that anyone can edit it to suit their needs. This project was made because I found existing documentation to be either hard to find or hard to understand, so I hope that this project helps someone out. This project is primarily using C#.
 
 **Packages**
 ------------------------------------
