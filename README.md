@@ -162,7 +162,8 @@ private async Task method2Cont(string type)
 ```
 **Creating a Setup Wizard**
 ------------------------------------
-To add a setup wizard, right click on your solution, go to add, and add a new project. From there you can choose setup wizard. Name the setup anything you want and choose create a setup for a Windows application.
+First you need to install the extension. Go to Extensions > Manage Extensions > Online > Search, find, download and install Microsoft Visual Studio Installer Projects extension. You may need to restart visual studio.
+Afterwards to add a setup wizard, right click on your solution, go to add, and add a new project. From there you can choose setup wizard. Name the setup anything you want and choose create a setup for a Windows application.
 
 <img src="https://user-images.githubusercontent.com/100814612/161460394-87d7c476-72ca-4a43-bb49-2875bf44f0d0.png" width="500" height="383"/><img>
 
