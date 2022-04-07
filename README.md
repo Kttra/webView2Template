@@ -21,9 +21,9 @@ The request button loads the following form. Currently the form does not have a 
 <img src="https://user-images.githubusercontent.com/100814612/160015820-705f4fb7-cd39-4922-a4e4-4a0761118e60.png"><img>
 </p>
 
-**User Agent**
+**Changing the User Agent**
 ------------------------------------
-It is possible to now change the user agent to view the mobile and desktop version of websites. Below are some examples of how what type of input the user agent setting expects.
+It is possible to now change the user agent to view the mobile and desktop version of websites. Below are some examples of how what type of input the user agent setting expects. You can also search up user agent strings and use them.
 
 ```
 string mobile = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Mobile/15E148 Safari/604.1";
