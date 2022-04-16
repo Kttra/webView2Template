@@ -11,7 +11,9 @@ In some cases, webview2 may not show up in your toolbar. If this happens, you wi
 ------------------------------------
 The default layout of the program is deplayed below. It consists of 3 progress bars, 6 labels, an address bar, 2 background worker threads, and 5 buttons. Pressing run will execute the 2 background workers (currently they do nothing). The progress bar's value will also increment by one. As this is made as a template for webview2 projects, most of the code and interface is inactive and just there to as an idea of how to proceed. Pressing on the progress bar or stop will send a stop request to the background workers. The go button loads the webpage that is typed in the address bar. The load button will load information from a json file.
 
+<p align="center">
 <img src="https://user-images.githubusercontent.com/100814612/160015485-d5b7e555-dce4-4e4d-97d9-8f8631d51c30.png"><img>
+</p>
 
 **Request Button**
 ------------------------------------
@@ -92,7 +94,9 @@ if (File.Exists(fileName))
 ------------------------------------
 Instead of working with json files, we can also use the app settings to store or load information. The settings can be accessed by going to the project properties and tehn heading to the settings tab. You can then add in parameters there. Here is an example of how it may look.
 
-<img src="https://user-images.githubusercontent.com/100814612/160251053-beebfc42-2244-4464-bd34-e3a7ef0a65b4.png" width="490" height="200"/><img>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/100814612/160251053-beebfc42-2244-4464-bd34-e3a7ef0a65b4.png"><img>
+</p>
 
 Now after setting up these values, how exactly do we use them? Well, it's simple, we just need to reassign the their values if we wish to and then we need to make sure to save them. Now you can use these values to load up different settings saved by the user.
 
@@ -165,11 +169,15 @@ private async Task method2Cont(string type)
 First you need to install the extension. Go to Extensions > Manage Extensions > Online > Search, find, download and install Microsoft Visual Studio Installer Projects extension. You may need to restart visual studio.
 Afterwards to add a setup wizard, right click on your solution, go to add, and add a new project. From there you can choose setup wizard. Name the setup anything you want and choose create a setup for a Windows application.
 
+<p align="center">
 <img src="https://user-images.githubusercontent.com/100814612/161460394-87d7c476-72ca-4a43-bb49-2875bf44f0d0.png" width="500" height="383"/><img>
+</p>
 
  Then hit next and check "Primary output from webView2B".
  
+<p align="center">
 <img src="https://user-images.githubusercontent.com/100814612/161460421-521c6a3f-8cd7-4c0e-8183-6ccd2642c4f9.png" width="500" height="383"/><img>
+</p>
 
 Alternatively you can try to publish your project using visual studio publish options.
 
