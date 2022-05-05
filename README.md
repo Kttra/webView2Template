@@ -27,7 +27,7 @@ The request button loads the following form. Currently the form does not have a 
 ------------------------------------
 It is possible to now change the user agent to view the mobile and desktop version of websites. Below are some examples of how what type of input the user agent setting expects. You can also search up user agent strings and use them.
 
-```
+```csharp
 string mobile = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Mobile/15E148 Safari/604.1";
 string edge = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Edg/91.0.864.59";
 string chrome = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36";
@@ -37,7 +37,7 @@ webView.CoreWebView2.Settings.UserAgent = edge;
 **Class File**
 ------------------------------------
 Sometimes your project may use json files to read information, finding a way to store the information from the file is important. One way to store the information is by using a class. In this case, I create a class called progressB below. The class file is also available in the json folder.
-```
+```csharp
 namespace webView2B
 {
     [Serializable]
@@ -66,7 +66,7 @@ namespace webView2B
 ------------------------------------
 Now that we got our class file, how do we work with Json files? I recommend using the Newtonsoft.Json package. After installing that package, you should create a class to store the json file information. Below is an example of setting the progress bar information using the progressB class and the progressBarValues json file. The results and files used are in the json folder of this project (the below code could be placed in the loadButton_Click method).
 
-```
+```csharp
 using Newtonsoft.Json; //Remember to include this at the top
 
 string fileName = @"c:\progressBarValues.json"; //Directory of the file
@@ -100,7 +100,7 @@ Instead of working with json files, we can also use the app settings to store or
 
 Now after setting up these values, how exactly do we use them? Well, it's simple, we just need to reassign the their values if we wish to and then we need to make sure to save them. Now you can use these values to load up different settings saved by the user.
 
-```
+```csharp
 //Assigning them values
 Properties.Settings.Default.info1 = 1;
 Properties.Settings.Default.info2 = 2;
@@ -119,7 +119,7 @@ int info3 = Properties.Settings.Default.info3;
 ------------------------------------
 Working with multiple forms can be confusing, so here's some information about it. Let's say you want to open form2 once a button is clicked in form1. In the button_click method, you would want create form2 and then show the form.
 
-```
+```csharp
 form2 f2 = new form2();
 f2.Show(); //Show form2, immediately execute code under
 //f2.ShowDialog(); //Show form2, wait for form2 to close
@@ -132,7 +132,7 @@ There are two ways to show the form after creating it. Show will show the form a
 **Async Methods**
 ------------------------------------
 I want to introduce the power of async methods. Async methods enable code to read like a sequence of statements. However, it executes them in a much more complicated order based on external resource allocation and when those tasks complete. They're important because they allow pauses between steps without freezing the UI. A simple use case would be if you want a task to repeat a number of times with pauses in between.
-```
+```csharp
 private async void method1()
 {
     for (int i = 0; i < 5; i++)
@@ -145,7 +145,7 @@ private async void method1()
 ```
 Now a more complex use case of async methods is if you want to run an async method multiple times without it overlapping. In the code below, method2 calls for method2Cont to run, then it waits until method2Cont finishes running before it continues onto the next loop.
 
-```
+```csharp
 private async void method2()
         {
             for(int i = 0; i < 5; i++)
@@ -190,7 +190,7 @@ One thing to take note of is in the system files application folder, these dll f
 **Initializing the Browser**
 ------------------------------------
 If you end up making a setup file for your webview project, you'll need to initialize the browser in a certain way or else the webpage of your project will end up being blank. Below the initialize component function, you should initialize your browser like so:
-```
+```csharp
 public Form1()
 {
     InitializeComponent();
