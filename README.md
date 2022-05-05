@@ -136,33 +136,33 @@ I want to introduce the power of async methods. Async methods enable code to rea
 private async void method1()
 {
     for (int i = 0; i < 5; i++)
-            {
-                //Do stuff
-                //Then wait 5 seconds
-                await Task.Delay(5000);
-            }
+    {
+        //Do stuff
+        //Then wait 5 seconds
+        await Task.Delay(5000);
+    }
 }
 ```
 Now a more complex use case of async methods is if you want to run an async method multiple times without it overlapping. In the code below, method2 calls for method2Cont to run, then it waits until method2Cont finishes running before it continues onto the next loop.
 
 ```csharp
 private async void method2()
-        {
-            for(int i = 0; i < 5; i++)
-            {
-                Task t = method2Cont("String");
-                await t;
-            }
-        }
+{
+    for(int i = 0; i < 5; i++)
+    {
+        Task t = method2Cont("String");
+        await t;
+    }
+}
 private async Task method2Cont(string type)
+{
+        for(int i = 0; i < 5; i++)
         {
-                for(int i = 0; i < 5; i++)
-                {
-                    //Do stuff with the string
-                    //Wait 3 seconds
-                    await Task.Delay(3000);
-                }
+            //Do stuff with the string
+            //Wait 3 seconds
+            await Task.Delay(3000);
         }
+}
 ```
 **Creating a Setup Wizard**
 ------------------------------------
