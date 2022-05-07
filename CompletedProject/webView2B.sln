@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webView2B", "webView2B\webView2B.csproj", "{AD1FB68D-E9CA-4C13-A4CD-5F7DF650CB47}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Binger", "Binger\Binger.vdproj", "{B6E900A6-29F1-4D2E-BCE2-C046C89C480A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Custom|Any CPU = Custom|Any CPU
+		Custom|x64 = Custom|x64
+		Custom|x86 = Custom|x86
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD1FB68D-E9CA-4C13-A4CD-5F7DF650CB47}.Custom|Any CPU.ActiveCfg = Custom|Any CPU
+		{AD1FB68D-E9CA-4C13-A4CD-5F7DF650CB47}.Custom|Any CPU.Build.0 = Custom|Any CPU
+		{AD1FB68D-E9CA-4C13-A4CD-5F7DF650CB47}.Custom|x64.ActiveCfg = Custom|x64
+		{AD1FB68D-E9CA-4C13-A4CD-5F7DF650CB47}.Custom|x64.Build.0 = Custom|x64
+		{AD1FB68D-E9CA-4C13-A4CD-5F7DF650CB47}.Custom|x86.ActiveCfg = Custom|Win32
+		{AD1FB68D-E9CA-4C13-A4CD-5F7DF650CB47}.Custom|x86.Build.0 = Custom|Win32
+		{AD1FB68D-E9CA-4C13-A4CD-5F7DF650CB47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD1FB68D-E9CA-4C13-A4CD-5F7DF650CB47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD1FB68D-E9CA-4C13-A4CD-5F7DF650CB47}.Debug|x64.ActiveCfg = Debug|x64
+		{AD1FB68D-E9CA-4C13-A4CD-5F7DF650CB47}.Debug|x64.Build.0 = Debug|x64
+		{AD1FB68D-E9CA-4C13-A4CD-5F7DF650CB47}.Debug|x86.ActiveCfg = Debug|Win32
+		{AD1FB68D-E9CA-4C13-A4CD-5F7DF650CB47}.Debug|x86.Build.0 = Debug|Win32
+		{AD1FB68D-E9CA-4C13-A4CD-5F7DF650CB47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD1FB68D-E9CA-4C13-A4CD-5F7DF650CB47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD1FB68D-E9CA-4C13-A4CD-5F7DF650CB47}.Release|x64.ActiveCfg = Release|x64
+		{AD1FB68D-E9CA-4C13-A4CD-5F7DF650CB47}.Release|x64.Build.0 = Release|x64
+		{AD1FB68D-E9CA-4C13-A4CD-5F7DF650CB47}.Release|x86.ActiveCfg = Release|Win32
+		{AD1FB68D-E9CA-4C13-A4CD-5F7DF650CB47}.Release|x86.Build.0 = Release|Win32
+		{B6E900A6-29F1-4D2E-BCE2-C046C89C480A}.Custom|Any CPU.ActiveCfg = Debug
+		{B6E900A6-29F1-4D2E-BCE2-C046C89C480A}.Custom|x64.ActiveCfg = Debug
+		{B6E900A6-29F1-4D2E-BCE2-C046C89C480A}.Custom|x86.ActiveCfg = Debug
+		{B6E900A6-29F1-4D2E-BCE2-C046C89C480A}.Debug|Any CPU.ActiveCfg = Debug
+		{B6E900A6-29F1-4D2E-BCE2-C046C89C480A}.Debug|x64.ActiveCfg = Debug
+		{B6E900A6-29F1-4D2E-BCE2-C046C89C480A}.Debug|x86.ActiveCfg = Debug
+		{B6E900A6-29F1-4D2E-BCE2-C046C89C480A}.Release|Any CPU.ActiveCfg = Release
+		{B6E900A6-29F1-4D2E-BCE2-C046C89C480A}.Release|x64.ActiveCfg = Release
+		{B6E900A6-29F1-4D2E-BCE2-C046C89C480A}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2607EF16-B728-4190-8AE1-DC3A56AFCFF3}
+	EndGlobalSection
+EndGlobal
