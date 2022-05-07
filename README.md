@@ -208,6 +208,14 @@ private async Task InitializeBrowser()
 }
 ```
 
+**Completed Project**
+----------------------
+A completed version of the project is included in the "Completed" folder. Below is an image of the project. The left side is the desktop user agent while the right side is the mobile user agent. Run loads random pages from google using edge, mobile, and desktop user agents. The progress bar updates based on the progress. Load either loads an existing json file or will ask you to manually change the number of webpage loads you would like to do. You can think of this program as a program to test webpages for different user agents.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/100814612/167239025-69cd8987-a8e8-4eca-b2d5-6e32650fc04f.png"><img>
+</p>
+
 **What This Project is About**
 ------------------------------------
 Originally this started as a webview2 project, but eventually it became more about exploring C# in visual studio. I started this project to update one of my older programs that was still running on Webbrowser using C++. I had to learn C# from scratch since I had no prior experience using it. While I was working on this project, I had a lot of questions that I had trouble finding answers to. That's why I decided to change the direction of this project to be more focused on what C# can do. From this point on, this project will be more focused on how to do things in C# and visual studio.
