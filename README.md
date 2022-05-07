@@ -213,7 +213,7 @@ private async Task InitializeBrowser()
 A completed version of the project is included in the "Completed" folder. Below is an image of the project. The left side is the desktop user agent while the right side is the mobile user agent. Run loads random pages from google using edge, mobile, and desktop user agents. The progress bar updates based on the progress. Load either loads an existing json file or will ask you to manually change the number of webpage loads you would like to do. You can think of this program as a program to test webpages for different user agents.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/100814612/167239025-69cd8987-a8e8-4eca-b2d5-6e32650fc04f.png"><img>
+<img src="https://user-images.githubusercontent.com/100814612/167239180-7ec7f55c-41f8-4c7e-adf6-4ae06d235583.png"><img>
 </p>
 
 **What This Project is About**
