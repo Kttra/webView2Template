@@ -218,4 +218,12 @@ A completed version of the project is included in the "Completed" folder. Below 
 
 **What This Project is About**
 ------------------------------------
-Originally this started as a webview2 project, but eventually it became more about exploring C# in visual studio. I started this project to update one of my older programs that was still running on Webbrowser using C++. Some parts of this readme are focused on C# elements that I found to be interesting. Additionally, I branched off this project into an android app using xamarin that can be found [here](https://github.com/Kttra/webViewXAM-Android). 
+Originally this started as a webview2 project, but eventually it became more about exploring C# in visual studio. I started this project to update one of my older programs that was still running on Webbrowser using C++. Some parts of this readme are focused on C# elements that I found to be interesting. Additionally, I branched off this project into an android app using xamarin that can be found [here](https://github.com/Kttra/webViewXAM-Android).
+
+**Other Related Projects**
+--------------------
+Below are other similar browser projects.
+
+[Android WebView App](https://github.com/Kttra/webViewXAM-Android) - An android broswer used to test loading different type of webpages using different user agents. Created using Xamarin. Similar to the completed project found in this repo.
+
+[Screenshot Webpage](https://github.com/Kttra/ScreenshotWebpage) - A webview2 project made to screenshot an entire webpage.
