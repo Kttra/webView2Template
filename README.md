@@ -3,7 +3,7 @@ A base project with webView2 using both C# and C++. It is made with visual studi
 
 **Packages**
 ------------------------------------
-To use webview2, make sure you download the package for it. To download the package, right click on your project and click on manage NuGet package. From there, you can search up webview2 and download it. Additionally, if you want the program to work for others, you may need them to download the webview2 runtime or the microsoft edge insider versions like the Microsoft Edge Canary Channel.
+To use webview2, make sure you download the package for it. To download the package, right click on your project and click on manage NuGet package. From there, you can search up webview2 and download it. Additionally, if you want the program to work for others, you may need them to download the webview2 runtime or the microsoft edge insider versions like the [Microsoft Edge Canary Channel](https://www.microsoftedgeinsider.com/en-us/download/canary).
 
 In some cases, webview2 may not show up in your toolbar. If this happens, you will need to right click on anything in the toolbar, then press on choose items. Press browse and head to the directory where the webview2 package was downloaded to.
 
