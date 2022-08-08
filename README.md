@@ -34,6 +34,17 @@ string chrome = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
 
 webView.CoreWebView2.Settings.UserAgent = edge;
 ```
+
+
+**User Agent Issues**
+------------------------------------
+Depending on the device that runs the program (or webview2 version), the user agent may not work properly. In this case, you may need to consider changing edge versions or webview versions. In addition, the framework could also affect the user agent from properly working. Upgrading from .net framework to .net could fix this. Fortunately, upgrading is simple through [upgrade assistant](https://dotnet.microsoft.com/en-us/platform/upgrade-assistant).
+
+An example of running the command to upgrade frameworks is:
+```powershell
+upgrade-assistant upgrade "C:\Users\username\source\repos\webView2B\webView2B.sln"
+```
+
 **Class File**
 ------------------------------------
 Sometimes your project may use json files to read information, finding a way to store the information from the file is important. One way to store the information is by using a class. In this case, I create a class called progressB below. The class file is also available in the json folder.
